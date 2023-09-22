@@ -1,0 +1,138 @@
+1). Program pertama dengan Kotlin
+a. Memulai program kotlin
+fun main(){ //function terdapat name dan inputs
+    println("Hello android") //Tampilkan output(Body)
+}
+b. Modifikasi
+fun main(){ //function terdapat name dan inputs
+    println("Hello android") //Tampilkan output(Body)
+    println("Hello android") //menambahkan pernyataan pertama(awal)
+}
+c. Ubah untuk mencetak nama
+fun main(){ //function terdapat name dan inputs
+    printlin("Hello, Wildan")//modif untuk menampilkan nama saya
+}
+
+LATIHAN
+1. Tebak output setelah dijalankan
+
+fun main() { //fungsi pada program
+    println("1") //cetak angka 1
+    println("2") //cetak angka 2
+    println("3") //cetak angka 3
+}
+kode diatas menampilkan angka 1, 2 dan 3 menurun
+
+2. Kode program 
+
+fun main(){ //fungsi pada program 
+    println("I'm") //cetak I'm
+    println("learning") //cetak learning
+    println("Kotlin!")  //cetak Kotlin!
+}
+
+3. Perbaiki kode untuk menampilkan urutan hari senin-jumat
+
+fun main() {
+    println("Monday") //letakan pernyataan sesuai urutan hari Monday sampai Friday
+    println("Tuesday")
+    println("Wednesday")
+    println("Thursday")
+    println("Friday")
+    
+}
+
+4. Perbaiki kode untuk menampilkan Tomorrow is rainy
+fun main() { //fungsi program
+    println("Tomorrow is rainy")
+} //perlu ditambah tanda(}) agar kode dapat dijalankan
+
+5. Perbaiki Kode untuk menampilkan There is a chance of snow
+fun main() {
+    println("There is a chance of snow") //printLine diubah menjadi println
+}
+
+6. Perbaiki Kode 
+fun main() { //fungsi program
+    println("Cloudy") //letakan posisi pernyataan 1 dan berikutnya kebawah bukan ke samping
+    println("Partly Cloudy") 
+    println("Windy")
+}
+
+7. Perbaiki Kode
+fun main() { //fungsi program
+    println("How's the weather today?") //cetak How's the weather today?
+}  //pada pernyataan(body) gunakan tanda {} bukan ()
+
+
+2). Membuat dan menggunakan variabel di Kotlin
+
+1. Membuat variabel
+
+fun main() { //fungsi pada program
+    val count: Int = 3 //deklarasi variabel dan memberikan nilai 3 dan tipe data integer
+    println(count) //cetak count yang menampilkan angka 3
+}
+
+2. Memperbarui variabel
+fun main() {
+    var cartTotal = 0 //memperbarui variabel dengan merubah val menjadi var
+    cartTotal = 10
+    println("Total: $cartTotal") //menampilkan variabel cartTotal 
+}
+
+3. Mempelajari jenis data lain
+a. Double
+fun main() { //fungsi program
+    val trip1: Double = 3.20 //variabel 1
+    val trip2: Double = 4.10 //variabel 2
+    val trip3: Double = 1.72 //variabel 3
+    val totalTripLength: Double = trip1 + trip2 + trip3 //memperbaiki kode dengan menjumlahkan ketiga variabel agar dapat dicetak
+    println("$totalTripLength miles left to destination") //outputnya adalah 9.02 miles left to destination
+}
+
+b. String
+fun main() {
+    val nextMeeting = "Next meeting is:" //menggunakan tipe data String
+    val date = "January 1"
+    val reminder = nextMeeting + date
+    println(reminder)
+}
+
+c. Boolean
+fun main() { //fungsi program
+    val notificationsEnabled: Boolean = false // menggunakan tipe data boolean false
+    println(notificationsEnabled) //outputnya adalah false
+}
+
+3). Membuat dan menggunakan fungsi di Kotlin
+
+1. Menentukan dan memanggil fungsi
+
+fun main() { //fungsi pada program
+    println("Happy Birthday, Rover!") //cetak pernyataan 1
+    println("You are now 5 years old!")//cetak pernyataan 2
+}
+
+2. Menambahkan fungsi baru
+fun main() { //fungsi program
+    println("Happy Birthday, Rover!") //cetak pernyataan 1
+    println("You are now 5 years old!") //cetak pernyataan 2 
+}
+
+fun birthdayGreeting() { //fungsi baru dapat ditambahkan
+
+}
+
+3. Menampilkan nilai dari fungsi
+fun birthdayGreeting(): String { //tambahkan unit dengan String
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+4. Menambahkan parameter
+fun birthdayGreeting(name: String): String { //tambahkan parameter name pada fungsi
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting" //gunakan return untuk memanggil fungsi
+}
